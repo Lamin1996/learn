@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText": "查看启动日志",
-  "usingComponents": {}
+  "navigationBarTitleText": "测试页2",
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#ccc",
+  "enablePullDownRefresh": true
 }

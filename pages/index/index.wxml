@@ -1,13 +1,8 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+
+<!-- 事件循环  wx:for -->
+<view wx:for="{{goodlist}}">{{item.name}}</view>
+
+<!-- 事件监听改变data -->
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap="addClick">+</button>
+<button size="mini" bindtap="delClick">-</button>
