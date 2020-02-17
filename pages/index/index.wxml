@@ -1,4 +1,3 @@
-
 <!-- 事件循环  wx:for -->
 <view wx:for="{{goodlist}}">{{item.name}}</view>
 
@@ -6,3 +5,23 @@
 <view>当前计数：{{counter}}</view>
 <button size="mini" bindtap="addClick">+</button>
 <button size="mini" bindtap="delClick">-</button>
+
+
+<!-- 获取用户信息方式 -->
+<button size="mini" bindgetuserinfo="handgetuserinfo" open-type="getUserInfo">获取授权</button>
+
+
+
+
+<!-- 展示用户信息 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+
+
+<view bindtap="clickhahaha">哈哈哈哈</view>
+<view bindtap="clickhahaha">哈哈哈哈</view>
+<view bindtap="clickhahaha">哈哈哈哈</view>
+<view bindtap="clickhahaha">哈哈哈哈</view>
+<view bindtap="clickhahaha">哈哈哈哈</view>
+<view bindtap="clickhahaha">哈哈哈哈</view>
+<view bindtap="clickhahaha">哈哈哈哈</view>
