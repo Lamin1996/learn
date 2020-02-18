@@ -60,6 +60,14 @@
 					"id": -1,
 					"name": "pages/logs/logs",
 					"pathName": "pages/logs/logs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/scroll/scroll",
+					"pathName": "pages/scroll/scroll",
+					"query": "",
 					"scene": null
 				}
 			]

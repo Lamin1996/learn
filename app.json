@@ -1,7 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/input/input",
+    "pages/button/button",
+    "pages/image/image",
+    "pages/scroll/scroll"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,8 +27,26 @@
         "selectedIconPath": "assets/img/timg2.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/scroll/scroll",
         "text": "测试2",
+        "iconPath": "assets/img/timg.png",
+        "selectedIconPath": "assets/img/timg2.png"
+      },
+      {
+        "pagePath": "pages/input/input",
+        "text": "测试3",
+        "iconPath": "assets/img/timg.png",
+        "selectedIconPath": "assets/img/timg2.png"
+      },
+      {
+        "pagePath": "pages/button/button",
+        "text": "测试4",
+        "iconPath": "assets/img/timg.png",
+        "selectedIconPath": "assets/img/timg2.png"
+      },
+      {
+        "pagePath": "pages/image/image",
+        "text": "测试5",
         "iconPath": "assets/img/timg.png",
         "selectedIconPath": "assets/img/timg2.png"
       }
