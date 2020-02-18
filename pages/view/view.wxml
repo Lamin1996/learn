@@ -1,0 +1,13 @@
+<view class="bgc">哈哈哈</view>
+<view>呵呵呵</view>
+
+
+
+<!-- 2.hover-class  当按下的时候显示的样式 -->
+<view class="h-c" hover-class="h-c-1">test1</view>
+<view class="h-c" hover-class="h-c-1" hover-stay-time="1000">test2</view>
+<view class="h-c" hover-class="h-c-1" hover-start-time="1000">test3</view>
+
+
+<!-- 3.hover-stop-propagation: 阻止祖先组件的点击状态 -->
+

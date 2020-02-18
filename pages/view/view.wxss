@@ -1,0 +1,15 @@
+/* pages/view/view.wxss */
+.bgc{
+  background: red;
+}
+.h-c{
+  height: 100px;
+  width: 100px;
+  background: yellow;
+}
+.h-c-1{
+  height: 50px;
+  width: 50px;
+  background: red;
+  font-size: 20px;
+}
