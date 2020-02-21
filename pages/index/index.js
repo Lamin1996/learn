@@ -40,6 +40,17 @@ Page({
   clickhahaha(){
     console.log('clickhahaha被点击了')
   },
+  hendleTabClick(event){
+    console.log(event)
+  },
+  changecpncounter(){
+    const my_sel = this.selectComponent('.sel-class')
+    console.log(my_sel)
+    // my_sel.setData({
+    //   counter:my_sel.data.counter+20
+    // })
+    my_sel.incrementCounter(10)
+  },
   //页面加载出来时
   onLoad(){
     console.log('onLoad')

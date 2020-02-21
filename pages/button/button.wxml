@@ -14,6 +14,7 @@
 
 
 <!-- 4.plain   镂空效果 -->
+<view>-----------</view>
 <button size="mini" plain>按钮</button>
 
 <!-- 5.disable 不可用 -->
@@ -24,3 +25,71 @@
 
 <!-- 7.hover-class -->
 <button hover-class="pressed">按钮</button>
+
+
+
+
+<!-- 获取时间 -->
+<view>{{time}}</view>
+
+
+<!-- wx:if      -->
+<view>-----------条件判断------------</view>
+<button bindtap="changeclick">切换显示</button>
+<view wx:if="{{isShow}}">哈哈哈</view>
+
+<!-- wx:elif/wx:else -->
+<button bindtap="changescore">添加分数</button>
+<view wx:if="{{score >= 90}}">优秀</view>
+<view wx:elif="{{score >= 80}}">良好</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+
+
+
+<!-- hidden属性 -->
+
+
+<!-- hidden将一个标签隐藏起来的时候，该组件依然存在(display:none) -->
+<!-- wx:if为false时候，标签则会消失 -->
+<view hidden=""></view>
+
+
+
+
+<!-- block标签,只接收控制属性 -->
+
+
+<!-- item index 起名字 -->
+<view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="i"></view>
+
+
+
+
+
+<!-- 常见的一些事件 -->
+<view class="box" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend" bindlongtap="longtap">
+
+</view>
+
+
+<!-- 事件对象分析 -->
+<button size="mini" bindtap="eventclick">事件对象</button>
+
+
+
+<view id="out" bindtap="outclick">
+  <view id="in" bindtap="inclick"></view>
+</view>
+
+
+
+<view class="boxone">
+  <block wx:for="{{titles}}" wx:key="{{index}}">
+    <view class="item" 
+    bindtap="clickitem" 
+    data-index="{{index}}" 
+    data-item="{{item}}">
+    {{item}}</view>
+  </block>
+</view>

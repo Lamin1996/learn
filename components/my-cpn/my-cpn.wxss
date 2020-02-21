@@ -1,0 +1,15 @@
+/* components/my-cpn/my-cpn.wxss */
+.tab-control{
+  display: flex;
+}
+.tab-item{
+  flex: 1;
+  text-align: center;
+}
+.acitve{
+  color: red;
+}
+.acitve text{
+  border-bottom: 6rpx solid red;
+  padding: 20rpx 20rpx ;
+}

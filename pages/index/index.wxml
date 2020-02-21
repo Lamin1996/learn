@@ -1,27 +1,23 @@
 <!-- 事件循环  wx:for -->
-<view wx:for="{{goodlist}}">{{item.name}}</view>
+<!-- <view wx:for="{{goodlist}}">{{item.name}}</view> -->
 
 <!-- 事件监听改变data -->
-<view>当前计数：{{counter}}</view>
+<!-- <view>当前计数：{{counter}}</view>
 <button size="mini" bindtap="addClick">+</button>
-<button size="mini" bindtap="delClick">-</button>
+<button size="mini" bindtap="delClick">-</button> -->
 
 
 <!-- 获取用户信息方式 -->
-<button size="mini" bindgetuserinfo="handgetuserinfo" open-type="getUserInfo">获取授权</button>
+<!-- <button size="mini" bindgetuserinfo="handgetuserinfo" open-type="getUserInfo">获取授权</button> -->
 
 
 
 
 <!-- 展示用户信息 -->
-<open-data type="userNickName"></open-data>
-<open-data type="userAvatarUrl"></open-data>
+<!-- <open-data type="userNickName"></open-data> -->
+<!-- <open-data type="userAvatarUrl"></open-data> -->
+<view>-----------</view>
+<my-cpn titles="{{['衣服','鞋子','裤子']}}" bind:itemclick="hendleTabClick" />
 
-
-<view bindtap="clickhahaha">哈哈哈哈</view>
-<view bindtap="clickhahaha">哈哈哈哈</view>
-<view bindtap="clickhahaha">哈哈哈哈</view>
-<view bindtap="clickhahaha">哈哈哈哈</view>
-<view bindtap="clickhahaha">哈哈哈哈</view>
-<view bindtap="clickhahaha">哈哈哈哈</view>
-<view bindtap="clickhahaha">哈哈哈哈</view>
+<button bindtap="changecpncounter">修改组件内的数据</button>
+<my-sel class="sel-class"></my-sel>

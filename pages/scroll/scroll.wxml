@@ -11,3 +11,7 @@
 <scroll-view class="scroll2" scroll-y hidden="{{true}}">
   <view wx:for="{{10}}" class="item2">{{item}}</view>
 </scroll-view>
+
+
+<button bindtap="changecolor">切换颜色</button>
+<view class="box {{active ? 'isactive' : ''}}" >哈哈哈</view>

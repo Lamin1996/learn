@@ -1,73 +1,64 @@
 // pages/button/button.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    isloading:false
+    isloading: false,
+    time: new Date().toLocaleTimeString(),
+    isShow:true,
+    score:50,
+    titles:['衣服','鞋子','裤子']
   },
 
-  clicktest(){
-    console.log('+++')
+  clicktest() {
     this.setData({
       isloading: this.isloading = !this.isloading
     })
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad() {
+    setInterval(
+      () => {
+        this.setData({
+          time: new Date().toLocaleTimeString()
+        })
+      }, 1000
+    )
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  changeclick(){
+    this.setData({
+      isShow: !this.data.isShow
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  changescore(){
+    this.setData({
+      score:this.data.score += 10
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  touchstart(){
+    console.log('touchstart')
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  touchmove() {
+    console.log('touchmove')
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  touchend(){
+    console.log('touchend')
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  longtap(){
+    console.log('longtap')
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  //
+  eventclick(event){
+    console.log(event)
+  },
+  outclick(event){
+    console.log(event)
+  },
+  inclick(event) {
+    console.log(event)
+  },
+  clickitem(event){
+    console.log(event)
+    const dataset = event.currentTarget.dataset
+    const title = dataset.item
+    const index = dataset.index
+    console.log(title,index)
   }
 })

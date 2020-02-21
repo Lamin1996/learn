@@ -69,6 +69,26 @@
 					"pathName": "pages/scroll/scroll",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/button/button",
+					"pathName": "pages/button/button",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/button/button",
+					"pathName": "pages/button/button",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"scene": null
 				}
 			]
 		}
